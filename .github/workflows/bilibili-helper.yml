@@ -1,12 +1,10 @@
 name: BILIBILI_HELPER
 
 on:
-  push:
-    branches: main
   workflow_dispatch:
-  schedule:
-    - cron: '10 13 * * *'
-    # cron表达式，Actions时区是UTC时间，所以上午9点要往前推8个小时
+  # schedule:
+  #   - cron: '10 13 * * *'
+  #   # cron表达式，Actions时区是UTC时间，所以上午9点要往前推8个小时
 
 jobs:
   start:
